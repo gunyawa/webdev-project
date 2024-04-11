@@ -1,3 +1,3 @@
 # webdev-project
 
-members: Akhativa Gulnur, Gaaze Verena, Zhumabayeva Amina 
+members: Akhatova Gulnur, Gaaze Verena, Zhumabayeva Amina 
