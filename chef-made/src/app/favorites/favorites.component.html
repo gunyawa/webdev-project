@@ -1,0 +1,30 @@
+<ng-container *ngIf="logged">
+  <div class="cart-container">
+    <h1 *ngIf="user">{{user.username}}'s favorites</h1>
+    <table>
+      <thead>
+      <tr>
+        <th>Food name</th>
+        <th>Food image</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let food of favoriteFoods">
+        <td>{{food.name}}</td>
+        <td><img src="{{food.imageUrl}}" alt="" class ="img"></td>
+        <td><button class="remove-button" (click)="remove(food.id)">Remove</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</ng-container>
+
+
+
+<ng-container *ngIf = "!logged">
+  <div class="d1">
+    <h1> You need to login </h1>
+    <button routerLink="/login"> Login</button>
+  </div>
+</ng-container>

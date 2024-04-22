@@ -1,0 +1,15 @@
+
+<div class="login-container">
+  <form>
+    <label>Username:</label>
+    <input type="text" id="email" name="email" [(ngModel)]="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password">
+
+    <button type="submit" (click)="login()">Login</button>
+    <ng-container *ngIf="error"><span class = "error"> Please correct the username or password!</span></ng-container>
+
+  </form>
+</div>
+
